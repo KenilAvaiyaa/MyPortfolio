@@ -21,30 +21,53 @@ const Navbar = () => {
         </svg>
       </div>
       <div className="service w-1/2 sm:flex gap-[1.5vw] text-[1.3vw] font-[400] justify-end items-center">
-        <h3 className=" flex flex-col relative overflow-hidden">
-          <a className="hidden sm:inline-block" href="#">
+        <div class="hidden sm:flex items-start gap-x-10">
+          <a
+            class="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            href="/#works"
+          >
+            <span class="link1">Works</span>
+            <span class="link2 ">Works</span>
+          </a>
+          <a
+            class="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            href="/#about"
+          >
+            <span class="link1">About</span>
+            <span class="link2 ">About</span>
+          </a>
+          <a
+            class="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            href="/contact"
+          >
+            <span class="link1">Contact</span>
+            <span class="link2 ">Contact</span>
+          </a>
+        </div>
+        {/* <div className="group w-fit h-fit flex flex-col -left-10 -top-5 relative overflow-hidden ">
+          <a className="hidden sm:inline-block absolute transition-transform duration-300 translate-y-0 group-hover:-translate-y-full   " href="#">
             Work
           </a>
-          <a className="hidden absolute left-0 top-6 sm:inline-block" href="#">
+          <a className="hidden sm:inline-block absolute transition-transform duration-300 translate-y-full group-hover:-translate-y-0" href="#">
             Work
           </a>
-        </h3>
+        </div>
         <h3 className=" flex flex-col relative overflow-hidden">
           <a className="hidden sm:inline-block" href="#">
             About
           </a>
-          <a className="hidden absolute left-0 top-6 sm:inline-block" href="#">
+          <a className="hidden absolute left-0 top-7 sm:inline-block" href="#">
             About
           </a>
         </h3>
         <h3 className=" flex flex-col relative overflow-hidden">
-          <a className="hidden sm:inline-block" href="#">
+          <a className="hidden sm:inline-block " href="#">
             Contact
           </a>
-          <a className="hidden absolute left-0 top-6 sm:inline-block" href="#">
+          <a className="hidden absolute left-0 top-7 sm:inline-block" href="#">
             Contact
           </a>
-        </h3>
+        </h3> */}
         {/* <h3><a  className='hidden sm:inline-block' href="#">About</a></h3> */}
         {/* <h3><a  className='hidden sm:inline-block' href="#">Contact</a></h3> */}
         <h3>
