@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className=" w-full h-14 sm:h-24 px-5 sm:px-10 py-5 flex justify-start items-center">
+    <div className=" w-fullh-[10vh] px-3 sm:px-10 py-5 flex justify-start items-center">
       <div className="logo w-1/2 flex justify-start items-center">
         <svg
           className="w-5/6 sm:w-[15vw]"
@@ -21,27 +21,27 @@ const Navbar = () => {
         </svg>
       </div>
       <div className="service w-1/2 sm:flex gap-[1.5vw] text-[1.3vw] font-[400] justify-end items-center">
-        <div class="hidden sm:flex items-start gap-x-10">
+        <div className="hidden sm:flex items-start gap-x-10">
           <a
-            class="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            className="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
             href="/#works"
           >
-            <span class="link1">Works</span>
-            <span class="link2 ">Works</span>
+            <span className="link1">Works</span>
+            <span className="link2 ">Works</span>
           </a>
           <a
-            class="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            className="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
             href="/#about"
           >
-            <span class="link1">About</span>
-            <span class="link2 ">About</span>
+            <span className="link1">About</span>
+            <span className="link2 ">About</span>
           </a>
           <a
-            class="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            className="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
             href="/contact"
           >
-            <span class="link1">Contact</span>
-            <span class="link2 ">Contact</span>
+            <span className="link1">Contact</span>
+            <span className="link2 ">Contact</span>
           </a>
         </div>
         {/* <div className="group w-fit h-fit flex flex-col -left-10 -top-5 relative overflow-hidden ">
