@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className=" w-fullh-[10vh] px-3 sm:px-10 py-5 flex justify-start items-center">
+    <div className=" w-full h-[10vh] px-3 sm:px-10 py-5 flex text-[#2f2f2f] justify-start items-center">
       <div className="logo w-1/2 flex justify-start items-center">
         <svg
           className="w-5/6 sm:w-[15vw]"
@@ -20,24 +20,24 @@ const Navbar = () => {
           />
         </svg>
       </div>
-      <div className="service w-1/2 sm:flex gap-[1.5vw] text-[1.3vw] font-[400] justify-end items-center">
+      <div className="service w-1/2 sm:flex gap-[1.5vw] text-nav text-[#2f2f2f] font-[400] justify-end items-center">
         <div className="hidden sm:flex items-start gap-x-10">
           <a
-            className="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            className="link-text group flex flex-col relative h-fit text-nav overflow-hidden font-sm"
             href="/#works"
           >
             <span className="link1">Works</span>
             <span className="link2 ">Works</span>
           </a>
           <a
-            className="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            className="link-text group flex flex-col relative h-fit text-nav overflow-hidden font-sm"
             href="/#about"
           >
             <span className="link1">About</span>
             <span className="link2 ">About</span>
           </a>
           <a
-            className="link-text group flex flex-col relative h-fit text-[1.2vw] overflow-hidden font-sm"
+            className="link-text group flex flex-col relative h-fit text-nav overflow-hidden font-sm"
             href="/contact"
           >
             <span className="link1">Contact</span>
@@ -72,7 +72,7 @@ const Navbar = () => {
         {/* <h3><a  className='hidden sm:inline-block' href="#">Contact</a></h3> */}
         <h3>
           <a
-            className="sm:hidden flex justify-end items-center text-sm font-[500]"
+            className="sm:hidden text-nav flex justify-end items-center text-sm font-[500]"
             href="#"
           >
             Menu

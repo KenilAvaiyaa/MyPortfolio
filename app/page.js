@@ -5,7 +5,7 @@ import Hero from './Components/Hero'
 const page = () => {
   return (
     <>
-    <div className=" w-full min-h-screen bg-main-body font-[Neue_Montreal] text-main-text text-3xl">
+    <div className=" w-full min-h-screen bg-main-body font-[Neue_Montreal] text-maintext text-3xl">
       <Navbar />
       <Hero />
     </div>
