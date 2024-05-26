@@ -15,10 +15,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        'main-text' : '#2F2F2F',
-        'seco-text' : '#BBBCBC',
-        'main-body' : '#FFFFFF',
-        'seco-body' : '#E9E9E9'
+        'maintext' : '#2F2F2F',
+        'secotext' : '#BBBCBC',
+        'mainbody' : '#FFFFFF',
+        'secobody' : '#E9E9E9'
+      },
+    },
+    extend: {
+      fontSize: {
+        'heading': '9.375rem', // Custom extra small font size
+        'paragraph': '1.750rem',   // Another custom extra small font size
+        'nav': '1.125rem',     // Custom extra large font size
       },
     },
   },
