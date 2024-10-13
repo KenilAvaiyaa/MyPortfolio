@@ -3,6 +3,8 @@ import { useGSAP } from "@gsap/react";
 import anime from "animejs";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
+// import Spline from '@splinetool/react-spline/next';
+
 
 const Loader = () => {
   const [currentValue, setCurrentValue] = useState(0);
@@ -40,47 +42,47 @@ const Loader = () => {
     }
   });
 
-//   const animetext = useRef(null);
-//   useEffect(() => {
-//     if (animetext.current) {
-//       anime
-//         .timeline({ loop: false })
-//         .add({
-//           targets: ".mla6 .letter",
-//           translate: [-100, 0],
-//           easing: "easeoutExpo",
-//           duration: 1500,
-//           delay: (el, i) => 30 * i,
-//         })
-//         .add({
-//           targets: ".mla6 .letter",
-//           translate: [0, 100],
-//           easing: "easeoutExpo",
-//           duration: 3000,
-//           delay: (el, i) => 2000 + 30 * i,
-//         });
-//     }
-//   }, []);
-
-
-    useGSAP(()=>{
-        gsap.from(".mla6 .letter", {
-            x: 0, // Final translate position
-            from: -100, // Starting translate position
-            ease: "power4.out", // Equivalent of "easeOutExpo" in GSAP
-            duration: 1.5, // Duration in seconds
-            stagger: 0.03, // Stagger the animation by 30ms per letter
+  const animetext = useRef(null);
+  useEffect(() => {
+    if (animetext.current) {
+      anime
+        .timeline()
+        .add({
+          targets: ".mla6 .letter",
+          translate: [-100, 0],
+          easing: "power4.inOut",
+          duration: 1500,
+          delay: (el, i) => 30 * i,
+        })
+        .add({
+          targets: ".mla6 .letter",
+          translate: [0, 100],
+          easing: "power4.inOut",
+          duration: 3000,
+          delay: (el, i) => 2000 + 30 * i,
         });
+    }
+  }, []);
+
+
+    // useGSAP(()=>{
+    //     gsap.from(".mla6 .letter", {
+    //         x: 0, // Final translate position
+    //         from: -100, // Starting translate position
+    //         ease: "power4.out", // Equivalent of "easeOutExpo" in GSAP
+    //         duration: 1.5, // Duration in seconds
+    //         stagger: 0.03, // Stagger the animation by 30ms per letter
+    //     });
     
-        // Second animation (translateY from 0 to 100)
-        gsap.to(".mla6 .letter", {
-            y: 100,
-            ease: "power4.out", // Equivalent of "easeOutExpo"
-            duration: 3, // Duration in seconds
-            delay: 2, // Delay start by 2 seconds
-            stagger: 0.03, // Stagger each letter
-        });
-    })
+    //     // Second animation (translateY from 0 to 100)
+    //     gsap.to(".mla6 .letter", {
+    //         y: 100,
+    //         ease: "power4.out", // Equivalent of "easeOutExpo"
+    //         duration: 3, // Duration in seconds
+    //         delay: 2, // Delay start by 2 seconds
+    //         stagger: 0.03, // Stagger each letter
+    //     });
+    // })
     
 
   useGSAP(() => {
@@ -102,8 +104,8 @@ const Loader = () => {
       duration: 1.5,
       delay: 4,
     });
-    gsap.to("loder-2", {
-      clipPath: "Dolvan(0% 0%, 100% 0%, 100% 0%, 0% 0%",
+    gsap.to(".loder-2", {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%",
       ease: "power4.inOut",
       duration: 1.5,
       delay: 3.5,
@@ -121,14 +123,21 @@ const Loader = () => {
           {currentValue}
         </div>
         <div className="copy text-2xl uppercase leading-none">
-          <div className="mla6 overflow-hidden">
-            <p ref={textRef}>Kenil Avaiya</p>
+          <div className="mla6 overflow-hidden" ref={textRef}>
+            <p ref={animetext}>Kenil Avaiya</p>
           </div>
         </div>
       </div>
-      <div className="loder-2 absolute top-0 w-full h-screen z-[-1]"></div>
+      <div className="loder-2 absolute top-0 w-full h-screen bg-cover bg-center">
+        {/* <Spline
+          scene="https://prod.spline.design/KLDJx5hhSmYUaQI3/scene.splinecode" 
+        /> */}
+      </div>
     </div>
   );
 };
 
 export default Loader;
+
+
+

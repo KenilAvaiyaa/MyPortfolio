@@ -30,10 +30,13 @@ body {
 .mla6 .latter{
     display: inline-block;
     line-height: 1em;
+    /* z-index:; */
 }
 
 .loder-2{
-    background: url(/public/Images/krishna.jpg);
+    /* background: url(/public/Images/krishna.jpg); */
+    /* background: url('/Images/krishna.jpg'); */
+    z-index: -1;
     background-size: cover;
     object-fit: cover;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) ;
