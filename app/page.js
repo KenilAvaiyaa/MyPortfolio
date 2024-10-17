@@ -1,4 +1,4 @@
-// "use client"
+// 'use client'
 import React from 'react'
 import Loader from './Components/Loader'
 import Navbar from './Components/Navbar'
@@ -9,8 +9,8 @@ const page = () => {
     <>
     <div className=" w-full min-h-screen bg-main-body font-[Neue_Montreal] text-maintext text-xl">
       <Loader />
-      {/* <Navbar />
-      <Hero /> */}
+      <Navbar />
+      <Hero />
     </div>
     </>
   )

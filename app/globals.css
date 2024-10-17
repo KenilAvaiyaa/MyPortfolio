@@ -20,22 +20,25 @@ body {
 }
 
 .count{
-    flex:2
+    flex:2;
+    padding: 0em 1em;
 }
 
 .copy{
-    flex:6
+    flex:6;
+    font-family: 'PP Editorial Old';
+    line-height: 1;
 }
 
-.mla6 .latter{
+.letter{
     display: inline-block;
     line-height: 1em;
-    /* z-index:; */
+    /* background-color: aqua; */
 }
 
 .loder-2{
     /* background: url(/public/Images/krishna.jpg); */
-    /* background: url('/Images/krishna.jpg'); */
+    background: url('/Images/krishna.jpg');
     z-index: -1;
     background-size: cover;
     object-fit: cover;
