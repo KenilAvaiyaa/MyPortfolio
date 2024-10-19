@@ -2,6 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
+import Spline from '@splinetool/react-spline';
 
 const Loader = () => {
   const [currentValue, setCurrentValue] = useState(0);
@@ -121,32 +122,32 @@ const Loader = () => {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%",
       ease: "power4.inOut",
       duration: 1.5,
-      delay: 3.5,
+      delay: 4,
     });
-    // gsap.to(".contaner",{
-    //   opacity:0,
-    //   duration:0.01,
-    //   delay:6
-    // })
+    
   });
 
   return (
     <div className="contaner">
       <div className="pre-loder fixed top-0 w-[100vw] h-[100vh]">
-        <div className="loder absolute top-0 w-full h-screen bg-black text-white flex justify-center items-center"></div>
-        <div className="loder-bg absolute top-0 w-full h-screen z-[-1] bg-red-600"></div>
+        <div className="loder absolute top-0 w-full h-screen z-[2] bg-black text-white flex justify-center items-center"></div>
+        <div className="loder-bg absolute top-0 w-full h-screen z-[1] bg-red-600"></div>
       </div>
       <div className="loder-con absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] flex z-[2] text-white">
         <div className="count text-base text-right leading-none ">
           {currentValue}
         </div>
-        <div className="copy text-3xl uppercase">
-          <div className="maintext overflow-hidden" ref={textRef}>
+        <div className="copy text-5xl tracking-normal uppercase">
+          <div className="maintext font-[head] overflow-hidden" ref={textRef}>
+            <p>Kenil Avaiya</p>
             <p>Kenil Avaiya</p>
           </div>
         </div>
       </div>
-      <div className="loder-2 absolute top-0 w-full h-screen bg-cover bg-center">
+      <div className="loder-2 absolute z-[-1] top-0 w-full h-screen bg-cover bg-center">
+      <Spline
+        scene="https://prod.spline.design/0R2M0W-4MBYv7W-h/scene.splinecode" 
+      />
       </div>
     </div>
   );

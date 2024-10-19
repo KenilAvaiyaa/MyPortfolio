@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: head;
+    src: url(../public/Fonts/FoundersGrotesk-Semibold.ttf);
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +35,7 @@ body {
     line-height: 1;
 }
 
-.letter{
+.maintext .letter{
     display: inline-block;
     line-height: 1em;
     /* background-color: aqua; */
@@ -38,16 +43,22 @@ body {
 
 .loder-2{
     /* background: url(/public/Images/krishna.jpg); */
-    background: url('/Images/krishna.jpg');
-    z-index: -1;
+    /* background: url('/Images/krishna.jpg'); */
     background-size: cover;
     object-fit: cover;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) ;
 }
 
+.loder-2 canvas {
+    /* background-color: black; */
+    width: 100% !important;
+    height: 100% !important;
+  }
+
 .link1,
 .link2 {
     display: flex;
+    z-index: -5;
     transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     
 }
@@ -74,7 +85,6 @@ body {
 @media (max-width:500px) {
     .infro_main{
         padding-left: 20vw;
-
     }
     .round{
         position: absolute;
