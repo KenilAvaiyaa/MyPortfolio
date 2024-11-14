@@ -1,0 +1,16 @@
+
+
+.textdiv{
+    font-weight: bolder;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.nametext{
+    display: inline-block;
+    line-height: 1em !important;
+}
+
+.count{
+    font-weight: bolder;
+}
