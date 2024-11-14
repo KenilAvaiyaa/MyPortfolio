@@ -1,0 +1,31 @@
+ /* .link1,
+ .link2 {
+    display: flex;
+    z-index: 1;
+    transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.link1 {
+    transform: translateY(0px);
+}
+
+.group:hover .link1 {
+    transform: translateY(-1.75rem);
+}
+
+.link2 {
+    position: absolute;
+    inset: 0;
+    transform: translateY(1.75rem);
+}
+
+.group:hover .link2 {
+    transform: translateY(0);
+} */
+
+/* .group:hover .link1 {
+    transform: translateY(-1.75rem);
+}
+.group:hover .link2 {
+    transform: translateY(0);
+} */
